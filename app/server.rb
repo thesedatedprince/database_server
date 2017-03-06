@@ -22,6 +22,7 @@ def requested_file(request_line)
 end
 
 server = TCPServer.new('localhost',4000)
+STDERR.puts "MattServer is open for business"
 
 loop{
     socket = server.accept

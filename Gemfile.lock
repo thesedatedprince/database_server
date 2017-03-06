@@ -49,6 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable
   capybara
   poltergeist
   rspec
