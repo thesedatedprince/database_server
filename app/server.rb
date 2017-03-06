@@ -5,7 +5,8 @@ WEB_ROOT = 'app/views'
 
 CONTENT_MAPPING = {
     'html' => 'text/html',
-    'txt' => 'text/plain'
+    'txt' => 'text/plain',
+    'erb' => 'text/html'
 }
 
 DEFAULT_CONTENT_TYPE = 'application/octet-stream'

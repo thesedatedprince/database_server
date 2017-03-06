@@ -3,9 +3,9 @@ require "addressable/uri"
 
 class QueryProcessor
 
-  def extract_query(path, key)
+  def self.extract_query(path, key)
+    p path
     uri = Addressable::URI.parse(path)
     uri.query_values[key]
   end
-
 end
