@@ -1,5 +1,6 @@
 require 'socket'
 require 'uri'
+require_relative 'query_processor'
 
 WEB_ROOT = 'app/views'
 
