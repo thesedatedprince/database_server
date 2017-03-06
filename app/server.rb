@@ -30,6 +30,9 @@ loop{
     STDERR.puts request_line
 
     path = requested_file(request_line)
+
+    path = File.join(path, 'index.html') if File.directory?(path)
+
     if File.exist?(path) && !File.directory?(path)
         File.open(path, "rb") do |file|
             socket.print "HTTP/1.1 200 OK\r\n" + "Content-Type: #{content_type(file)}\r\n" +
